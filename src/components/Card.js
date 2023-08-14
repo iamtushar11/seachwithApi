@@ -9,13 +9,13 @@ function Card({ setUser }) {
             .then((response) => {
                 return response.json();
             }).then((data) => {
-                let gagan = data.results.filter((res) => {
+                let tushar = data.results.filter((res) => {
                     return (
                         value && res && res.name.first && res.name.first.toLowerCase().includes(value)
                     )
                 })
-                console.log(gagan);
-                setUser(gagan)
+
+                setUser(tushar)
             })
     }
     // useEffect(() => {

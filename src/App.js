@@ -1,7 +1,7 @@
 import './App.css';
 import { useState } from 'react';
-import Card from './Card';
-import List from './List';
+import Card from './components/Card';
+import List from './components/List';
 function App() {
   const [user, setUser] = useState([]);
   return (
