@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import { BsSearch } from 'react-icons/bs';
 
 import "./Card.css"
@@ -18,9 +18,9 @@ function Card({ setUser }) {
                 setUser(tushar)
             })
     }
-    // useEffect(() => {
-    //     fetchData();
-    // }, [])
+    useEffect(() => {
+        fetchData();
+    }, [])
     const handleChange = (value) => {
         setinput(value)
         fetchData(value)
